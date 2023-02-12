@@ -21,7 +21,7 @@ for n in range(0, q):
     e[n][4] = float(input("Enter U6:"))
     Sed = e[n][2] * O[0][0] + e[n][3] * O[0][1] + e[n][4] * O[0][2]
     e[n][6] = 7.23e10 * RI * ((RI ** 2 + 2) / 3) ** 2 * Sed / ((2 * e[n][0] + 1) * (e[n][1] * 1e-9) ** 3)
-    SumAed += e[n][6]
+    SumAed += e[n][5]
 
 #calculation of Life time of states
 LifeTime = 1 / SumAed
@@ -29,7 +29,7 @@ LifeTime = 1 / SumAed
 #calculation of Branching ratio
 BrRatio = np.array([])
 for i in range(0, q):   
-    BrRatio[0][n] = e(n,6) / SumAed
+    BrRatio[0][n] = e(n,5) / SumAed
 
 #e(n,6) is the calculated Aed ;
 #Check if a Amd occurs for the given transition.

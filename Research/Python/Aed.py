@@ -33,4 +33,3 @@ for i in range(0, q):
 
 #e(n,6) is the calculated Aed ;
 #Check if a Amd occurs for the given transition.
-#test

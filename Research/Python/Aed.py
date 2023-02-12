@@ -20,7 +20,7 @@ for n in range(0, q):
     e[n][3] = float(input("Enter U4:"))
     e[n][4] = float(input("Enter U6:"))
     Sed = e[n][2] * O[0][0] + e[n][3] * O[0][1] + e[n][4] * O[0][2]
-    e[n][6] = 7.23e10 * RI * ((RI ** 2 + 2) / 3) ** 2 * Sed / ((2 * e[n][0] + 1) * (e[n][1] * 1e-9) ** 3)
+    e[n][5] = 7.23e10 * RI * ((RI ** 2 + 2) / 3) ** 2 * Sed / ((2 * e[n][0] + 1) * (e[n][1] * 1e-9) ** 3)
     SumAed += e[n][5]
 
 #calculation of Life time of states

@@ -6,13 +6,13 @@ q = int(input('How many lower transitions?:'))
 RI = float(input('What is the Refractive Index?:'))
 
 #def A(q, RI):
-O = np.array([[0,0,0]])
+O = np.empty(3, float)
 print('Enter the value of JO parameters in order and press enter after each entry:')
 for i in range(0, 3):
     O[0][i] = float(input())
 e = []
 for e1 in range(0, q):
-    e.append(np.array([0,0,0,0,0,0]))
+    e.append(np.empty(6, float))
 np.array(e)
 SumAed = 0
 for n in range(0, q):

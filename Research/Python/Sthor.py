@@ -3,9 +3,9 @@
 import numpy as np
 
 def Sthor(O2, O4, O6, x):
-    Om = [O2,O4,O6] # make a matrix of the JO parameters
+    om = np.array([O2,O4,O6]) # make a matrix of the JO parameters
 
-    Sth = np.dot(Om, x.transpose())
+    sth = np.dot(om, x.transpose())
 
-    Xr = Sth.transpose()
-    return Xr
+    xr = sth.transpose()
+    return xr
